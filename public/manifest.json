@@ -1,0 +1,30 @@
+{
+  "short_name": "π Counter",
+  "name": "π Counter",
+  "icons": [
+    {
+      "src": "logo32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "logo64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#784BD8",
+  "background_color": "#E5E5E5"
+}

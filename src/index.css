@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Mada:wght@300;500;700&display=swap");
+
+:root {
+  --primary-color: #784bd8;
+}
+
+@layer components {
+  .app {
+    @apply bg-neutral-200 w-screen h-screen;
+    font-family: "Mada", sans-serif;
+  }
+
+  .appbar {
+    @apply flex justify-center items-center rounded-b-sm h-16 select-none;
+    background-color: var(--primary-color);
+  }
+
+  .appbar-text {
+    @apply font-bold text-white text-3xl;
+  }
+
+  .input-area {
+    @apply mt-12 flex flex-col items-center;
+  }
+
+  .input-text {
+    @apply font-light text-2xl select-none;
+  }
+
+  .input-field-area {
+    @apply flex justify-around items-center font-bold text-5xl w-auto rounded-full border-4 mt-2 px-3;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  .input-field {
+    @apply bg-transparent text-center outline-none w-24;
+    max-width: auto;
+  }
+
+  .input-submit-btn {
+    @apply mt-3 flex justify-center items-center;
+  }
+
+  .input-submit-btn:active, .input-submit-btn:hover {
+    filter: brightness(0.85);
+  }
+
+  .result-area {
+    @apply flex justify-center mt-14 h-1/2;
+  }
+
+  .result-container {
+    @apply w-10/12 rounded-md border-2 h-fit;
+    min-height: 100%;
+    border-color: var(--primary-color);
+  }
+
+  .result-default-text {
+    @apply font-sans font-semibold italic mt-24 text-center text-stone-400 select-none;
+  }
+
+  .after-result-area {
+    @apply grid place-items-center mt-14 h-1/2;
+  }
+
+  .after-result-container {
+    @apply flex flex-row justify-start gap-3 flex-wrap w-10/12 rounded-md border-2 px-6 py-8 overflow-y-auto h-96 relative;
+    border-color: var(--primary-color);
+  }
+
+  .digit {
+    @apply font-medium text-4xl;
+  }
+
+  .digit:first-child::after {
+    content: ".";
+  }
+
+  .copy-btn {
+    background-color: var(--primary-color);
+    @apply p-1.5 rounded-b-md absolute top-0 right-0;
+  }
+
+  .copy-btn:active, .copy-btn:hover {
+    filter: brightness(0.85);
+  }
+}
